@@ -341,7 +341,7 @@ span.form-msg-error:not(:empty){color:#e89090;font-size:.78rem;margin-top:.35rem
   .hero-grid{gap:2.6rem}
   .hero h1{font-size:clamp(2.8rem,11vw,3.6rem)}
   .collage{height:auto;display:grid;grid-template-columns:1fr 1fr;gap:.9rem;max-width:none}
-  .frame{position:static;width:100%;transform:none;box-shadow:0 14px 40px rgba(0,0,0,.45)}
+  .frame{position:relative;inset:auto;width:100%;transform:none;box-shadow:0 14px 40px rgba(0,0,0,.45)}
   .frame:nth-child(1),.frame:nth-child(2),.frame:nth-child(3),.frame:nth-child(4){transform:none}
   .section-head h2,.display{letter-spacing:-.01em}
   .usp-item,.speed-card{padding:1.6rem}
