@@ -116,10 +116,10 @@
         then <strong>edit on site and deliver within the hour</strong>, while your audience is still buzzing.
       </p>
       <div class="hero-actions">
-        <button class="btn btn-gold" data-open-reel>
+        <a class="btn btn-gold" href="#projects">
           <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="6 4 20 12 6 20 6 4"/></svg>
-          Watch showreel
-        </button>
+          See my work
+        </a>
         <a class="btn btn-line" href="#about">More about me</a>
       </div>
     </div>
@@ -146,18 +146,14 @@
       </button>
     </div>
   </div>
-  <button class="reel-float" data-open-reel aria-label="Watch showreel">
-    <span class="play" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="6 4 20 12 6 20 6 4"/></svg></span>
-    Watch showreel
-  </button>
 </section>
 
 <!-- ================= CLIENT MARQUEE ================= -->
 <div class="marquee" aria-label="Clients">
   <p class="marquee-label">Trusted by</p>
   <div class="marquee-track" aria-hidden="true">
-    <span>Your Client</span><span>Brand Name</span><span>Festival</span><span>Agency</span><span>Venue</span><span>Company</span><span>Event Co.</span><span>Label</span>
-    <span>Your Client</span><span>Brand Name</span><span>Festival</span><span>Agency</span><span>Venue</span><span>Company</span><span>Event Co.</span><span>Label</span>
+    <img src="client-nathan-carter.webp" alt="Nathan Carter" loading="lazy" height="56"><img src="client-barrog.webp" alt="Barróg Healthcare" loading="lazy" height="56"><img src="client-cooper.webp" alt="Cooper Horse Trucks" loading="lazy" height="56"><img src="client-hyde.webp" alt="Hyde & Seek" loading="lazy" height="56"><img src="client-john-odwyer.webp" alt="John O'Dwyer" loading="lazy" height="56"><img src="client-legra.webp" alt="Le Grá Premium Irish Lager" loading="lazy" height="56"><img src="client-nannys.webp" alt="Nanny's of Duleek" loading="lazy" height="56"><img src="client-ooosch.webp" alt="Ooosch TV" loading="lazy" height="56"><img src="client-paddocks.webp" alt="The Paddocks Bar & Restaurant" loading="lazy" height="56"><img src="client-rkings.webp" alt="R.Kings Competitions" loading="lazy" height="56"><img src="client-rambling-rover.webp" alt="Rambling Rover" loading="lazy" height="56"><img src="client-clearout-crew.webp" alt="The Clearout Crew" loading="lazy" height="56"><img src="client-norseman.webp" alt="The Norseman Temple Bar" loading="lazy" height="56"><img src="client-larry-fleet.webp" alt="Larry Fleet" loading="lazy" height="56"><img src="client-aer-lingus.webp" alt="Aer Lingus" loading="lazy" height="56"><img src="client-stephen-wilson.webp" alt="Stephen Wilson Jr" loading="lazy" height="56"><img src="client-supermacs.webp" alt="Supermac's" loading="lazy" height="56">
+    <img src="client-nathan-carter.webp" alt="Nathan Carter" loading="lazy" height="56"><img src="client-barrog.webp" alt="Barróg Healthcare" loading="lazy" height="56"><img src="client-cooper.webp" alt="Cooper Horse Trucks" loading="lazy" height="56"><img src="client-hyde.webp" alt="Hyde & Seek" loading="lazy" height="56"><img src="client-john-odwyer.webp" alt="John O'Dwyer" loading="lazy" height="56"><img src="client-legra.webp" alt="Le Grá Premium Irish Lager" loading="lazy" height="56"><img src="client-nannys.webp" alt="Nanny's of Duleek" loading="lazy" height="56"><img src="client-ooosch.webp" alt="Ooosch TV" loading="lazy" height="56"><img src="client-paddocks.webp" alt="The Paddocks Bar & Restaurant" loading="lazy" height="56"><img src="client-rkings.webp" alt="R.Kings Competitions" loading="lazy" height="56"><img src="client-rambling-rover.webp" alt="Rambling Rover" loading="lazy" height="56"><img src="client-clearout-crew.webp" alt="The Clearout Crew" loading="lazy" height="56"><img src="client-norseman.webp" alt="The Norseman Temple Bar" loading="lazy" height="56"><img src="client-larry-fleet.webp" alt="Larry Fleet" loading="lazy" height="56"><img src="client-aer-lingus.webp" alt="Aer Lingus" loading="lazy" height="56"><img src="client-stephen-wilson.webp" alt="Stephen Wilson Jr" loading="lazy" height="56"><img src="client-supermacs.webp" alt="Supermac's" loading="lazy" height="56">
   </div>
 </div>
 
@@ -471,10 +467,6 @@ function videoHTML(spec){
 }
 document.querySelectorAll('[data-video]').forEach(b=>b.addEventListener('click',e=>{
   e.preventDefault();openModal(videoHTML(b.dataset.video));
-}));
-// showreel buttons — plays the Hyde & Seek reel until a dedicated showreel exists
-document.querySelectorAll('[data-open-reel]').forEach(b=>b.addEventListener('click',e=>{
-  e.preventDefault();openModal(videoHTML('local:hyde-and-seek.mp4'));
 }));
 function closeReel(){
   modal.classList.remove('open');document.body.style.overflow='';

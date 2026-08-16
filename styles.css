@@ -158,7 +158,9 @@ h2.display{font-size:clamp(2rem,5.5vw,3.6rem)}
 /* ================= marquee ================= */
 .marquee{border-block:1px solid var(--border);background:var(--bg-soft);overflow:hidden;padding:1.4rem 0}
 .marquee-label{text-align:center;font-size:.68rem;font-weight:800;letter-spacing:.24em;text-transform:uppercase;color:var(--text-muted);margin-bottom:1rem}
-.marquee-track{display:flex;gap:0;white-space:nowrap;animation:marquee 30s linear infinite;width:max-content}
+.marquee-track{display:flex;align-items:center;gap:4rem;white-space:nowrap;animation:marquee 40s linear infinite;width:max-content;padding-right:4rem}
+.marquee-track img{height:52px;width:auto;flex:none;opacity:.8;filter:grayscale(1) brightness(1.25);transition:opacity var(--transition),filter var(--transition)}
+.marquee-track img:hover{opacity:1;filter:none}
 .marquee-track span{
   font-family:var(--font-display);text-transform:uppercase;
   font-size:1.1rem;color:#57534d;margin:0 2.4rem;transition:color var(--transition);
