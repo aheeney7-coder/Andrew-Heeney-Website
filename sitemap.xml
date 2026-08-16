@@ -43,4 +43,40 @@
       <video:player_loc>https://www.youtube-nocookie.com/embed/HZZT9PzgOm0</video:player_loc>
     </video:video>
   </url>
+  <url>
+    <loc>https://www.andrewheeneymedia.com/nathan-carter-whats-up.html</loc>
+    <lastmod>2026-08-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.andrewheeneymedia.com/stephen-wilson-jr-dublin.html</loc>
+    <lastmod>2026-08-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.andrewheeneymedia.com/larry-fleet-aftermovie.html</loc>
+    <lastmod>2026-08-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.andrewheeneymedia.com/camden-deluxe-fpv.html</loc>
+    <lastmod>2026-08-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.andrewheeneymedia.com/warewolf-product-ad.html</loc>
+    <lastmod>2026-08-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.andrewheeneymedia.com/hyde-and-seek-reel.html</loc>
+    <lastmod>2026-08-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>
