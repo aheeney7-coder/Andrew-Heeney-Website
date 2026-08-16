@@ -57,9 +57,9 @@
 }
 .filter:hover{border-color:var(--accent);color:var(--accent)}
 .filter.active{background:var(--accent);border-color:var(--accent);color:var(--on-accent)}
-.all-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem;padding-bottom:clamp(4rem,8vw,6rem)}
+.all-grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem 2rem;padding-bottom:clamp(4rem,8vw,6rem)}
 .proj.hidden{display:none}
-@media (max-width:1024px){.all-grid{grid-template-columns:1fr 1fr}}
+
 @media (max-width:768px){.all-grid{grid-template-columns:1fr}}
 </style>
 </head>
@@ -106,60 +106,47 @@
 
 <section>
   <div class="container all-grid">
-    <button class="proj" data-cat="multicam" data-video="youtube:zSzsjD99nbk" aria-label="Play: Nathan Carter — What's Up, official music video">
-      <img src="https://i.ytimg.com/vi/zSzsjD99nbk/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/zSzsjD99nbk/hqdefault.jpg'" alt="" loading="lazy">
-      <div class="proj-meta">
-        <span class="cat">Multicam videos</span>
-        <h3>Nathan Carter — What&rsquo;s Up</h3>
-        <p class="delivered">Official music video</p>
-        <span class="view">Watch <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-      </div>
+    <button class="proj" data-cat="multicam" data-video="youtube:zSzsjD99nbk" aria-label="Play: Nathan Carter — What&rsquo;s Up">
+      <span class="proj-bar"><span class="t">Nathan Carter — What&rsquo;s Up</span><span class="c">Multicam</span></span>
+      <span class="proj-frame">
+        <img src="https://i.ytimg.com/vi/zSzsjD99nbk/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/zSzsjD99nbk/hqdefault.jpg'" alt="" loading="lazy">
+        <span class="view-chip">View project</span>
+      </span>
     </button>
-    <button class="proj" data-cat="tour" data-video="youtube:pj-wXmXHAZs" aria-label="Play: Stephen Wilson Jr Live in Dublin">
-      <video autoplay muted loop playsinline preload="metadata" src="stephen-wilson-loop.mp4" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" aria-hidden="true"></video>
-      <div class="proj-meta">
-        <span class="cat">Artist tour content</span>
-        <h3>Stephen Wilson Jr Live in Dublin</h3>
-        <p class="delivered">Shot &amp; delivered same night</p>
-        <span class="view">Watch <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-      </div>
+    <button class="proj" data-cat="tour" data-video="youtube:pj-wXmXHAZs" aria-label="Play: Stephen Wilson Jr Live">
+      <span class="proj-bar"><span class="t">Stephen Wilson Jr Live</span><span class="c">Artist Tour</span></span>
+      <span class="proj-frame">
+        <video autoplay muted loop playsinline preload="metadata" src="stephen-wilson-loop.mp4" aria-hidden="true"></video>
+        <span class="view-chip">View project</span>
+      </span>
     </button>
-    <button class="proj" data-cat="events" data-video="youtube:O_Sp5LAhckQ" aria-label="Play: Larry Fleet Live in Dublin — Official Aftermovie">
-      <img src="https://i.ytimg.com/vi/O_Sp5LAhckQ/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/O_Sp5LAhckQ/hqdefault.jpg'" alt="" loading="lazy">
-      <div class="proj-meta">
-        <span class="cat">Events</span>
-        <h3>Larry Fleet Live in Dublin</h3>
-        <p class="delivered">Official aftermovie</p>
-        <span class="view">Watch <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-      </div>
+    <button class="proj" data-cat="events" data-video="youtube:O_Sp5LAhckQ" aria-label="Play: Larry Fleet Live — Aftermovie">
+      <span class="proj-bar"><span class="t">Larry Fleet Live — Aftermovie</span><span class="c">Events</span></span>
+      <span class="proj-frame">
+        <img src="https://i.ytimg.com/vi/O_Sp5LAhckQ/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/O_Sp5LAhckQ/hqdefault.jpg'" alt="" loading="lazy">
+        <span class="view-chip">View project</span>
+      </span>
     </button>
-    <button class="proj" data-cat="brand" data-video="youtube:HZZT9PzgOm0" aria-label="Play: The Camden Deluxe Dublin — FPV Promo Video">
-      <img src="https://i.ytimg.com/vi/HZZT9PzgOm0/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/HZZT9PzgOm0/hqdefault.jpg'" alt="" loading="lazy">
-      <div class="proj-meta">
-        <span class="cat">Brand &amp; FPV</span>
-        <h3>The Camden Deluxe — FPV Promo</h3>
-        <p class="delivered">One-take FPV venue promo</p>
-        <span class="view">Watch <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-      </div>
+    <button class="proj" data-cat="brand" data-video="youtube:HZZT9PzgOm0" aria-label="Play: The Camden Deluxe — FPV">
+      <span class="proj-bar"><span class="t">The Camden Deluxe — FPV</span><span class="c">Brand &amp; FPV</span></span>
+      <span class="proj-frame">
+        <img src="https://i.ytimg.com/vi/HZZT9PzgOm0/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/HZZT9PzgOm0/hqdefault.jpg'" alt="" loading="lazy">
+        <span class="view-chip">View project</span>
+      </span>
     </button>
-    <button class="proj" data-cat="ads" data-video="local:warewolf-ad.mp4" aria-label="Play: Warewolf — product ad">
-      <img src="warewolf-poster.jpg" alt="" loading="lazy">
-      <div class="proj-meta">
-        <span class="cat">Product ad</span>
-        <h3>Warewolf — Product Ad</h3>
-        <p class="delivered">Social-first product spot</p>
-        <span class="view">Watch <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-      </div>
+    <button class="proj" data-cat="ads" data-video="local:warewolf-ad.mp4" aria-label="Play: Warewolf">
+      <span class="proj-bar"><span class="t">Warewolf</span><span class="c">Product Ad</span></span>
+      <span class="proj-frame">
+        <img src="warewolf-poster.jpg" alt="" loading="lazy">
+        <span class="view-chip">View project</span>
+      </span>
     </button>
-    <button class="proj" data-cat="social" data-video="local:hyde-and-seek.mp4" aria-label="Play: This Is Hyde &amp; Seek — social reel">
-      <img src="" alt="" loading="lazy" data-poster-from="hyde-and-seek.mp4" style="display:none">
-      <video autoplay muted loop playsinline preload="metadata" src="hyde-and-seek.mp4" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" aria-hidden="true"></video>
-      <div class="proj-meta">
-        <span class="cat">Social reels</span>
-        <h3>This Is Hyde &amp; Seek</h3>
-        <p class="delivered">Brand social reel</p>
-        <span class="view">Watch <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-      </div>
+    <button class="proj" data-cat="social" data-video="local:hyde-and-seek.mp4" aria-label="Play: This Is Hyde &amp; Seek">
+      <span class="proj-bar"><span class="t">This Is Hyde &amp; Seek</span><span class="c">Social Reel</span></span>
+      <span class="proj-frame">
+        <video autoplay muted loop playsinline preload="metadata" src="hyde-and-seek.mp4" aria-hidden="true"></video>
+        <span class="view-chip">View project</span>
+      </span>
     </button>
   </div>
 </section>
