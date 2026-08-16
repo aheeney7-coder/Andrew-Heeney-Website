@@ -1,0 +1,21 @@
+{
+  "name": "andrew-heeney-website",
+  "version": "1.0.0",
+  "description": "Portfolio website for Andrew Heeney, videographer — Ireland's Fastest Turnaround",
+  "scripts": {
+    "dev": "npx serve .",
+    "build": "echo 'Static site - no build step required'",
+    "lint": "echo 'No linter configured for static HTML'",
+    "test": "echo 'No tests configured'"
+  },
+  "keywords": [
+    "videography",
+    "portfolio",
+    "static-site"
+  ],
+  "author": "Andrew Heeney",
+  "license": "ISC",
+  "dependencies": {
+    "@vercel/speed-insights": "^1.0.14"
+  }
+}
