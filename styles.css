@@ -347,19 +347,23 @@ span.form-msg-error:not(:empty){color:#e89090;font-size:.78rem;margin-top:.35rem
 }
 
 /* ============ PROJECTS — staggered editorial tiles (boaz style) ============ */
-.proj-stage{display:grid;grid-template-columns:repeat(12,1fr);gap:0 1.5rem}
+.proj-stage{display:grid;grid-template-columns:repeat(12,1fr);gap:0 2rem}
 .proj{
   display:block;width:100%;padding:0;text-align:left;cursor:pointer;
   background:none;border:0;
 }
 .proj-bar{
-  display:flex;justify-content:space-between;align-items:center;gap:1rem;
+  display:flex;width:100%;justify-content:space-between;align-items:center;gap:1rem;
   background:rgba(38,38,42,.92);padding:.55rem .9rem;
 }
 .proj-bar .t{font-family:var(--font-display);text-transform:uppercase;font-size:.82rem;letter-spacing:.02em;color:var(--text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .proj-bar .c{font-family:var(--font-display);text-transform:uppercase;font-size:.72rem;color:var(--text-soft);flex:none}
 .proj-frame{
-  position:relative;aspect-ratio:16/9;overflow:hidden;background:#101012;
+  display:block;position:relative;aspect-ratio:16/9;overflow:hidden;background:#101012;
+}
+.proj-frame iframe{
+  position:absolute;inset:0;width:100%;height:100%;border:0;pointer-events:none;
+  transform:scale(1.4);transform-origin:center;
 }
 .proj-frame img,.proj-frame video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .5s ease,opacity var(--transition)}
 .proj:hover .proj-frame img,.proj:hover .proj-frame video{transform:scale(1.03)}
@@ -372,9 +376,9 @@ span.form-msg-error:not(:empty){color:#e89090;font-size:.78rem;margin-top:.35rem
 }
 .proj:hover .view-chip{opacity:1;transform:none}
 /* stagger */
-.proj.p1{grid-column:1/8;grid-row:1}
-.proj.p2{grid-column:8/13;grid-row:1;margin-top:7rem}
-.proj.p3{grid-column:4/10;grid-row:2;margin-top:-3rem;position:relative;z-index:2}
+.proj.p1{grid-column:1/8;grid-row:1;margin-bottom:4rem}
+.proj.p2{grid-column:8/13;grid-row:1;margin-top:10rem}
+.proj.p3{grid-column:4/10;grid-row:2;margin-top:2rem;position:relative;z-index:2}
 @media (max-width:900px){
   .proj-stage{gap:2rem 1rem}
   .proj.p1{grid-column:1/13;grid-row:auto;margin:0}
