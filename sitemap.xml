@@ -1,15 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
   <url>
     <loc>https://www.andrewheeneymedia.com/</loc>
     <lastmod>2026-08-16</lastmod>
-    <changefreq>monthly</changefreq>
+    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/zSzsjD99nbk/hqdefault.jpg</video:thumbnail_loc>
+      <video:title>Nathan Carter — What's Up (Official Music Video)</video:title>
+      <video:description>Multicam official music video filmed and produced by Andrew Heeney.</video:description>
+      <video:player_loc>https://www.youtube-nocookie.com/embed/zSzsjD99nbk</video:player_loc>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/pj-wXmXHAZs/hqdefault.jpg</video:thumbnail_loc>
+      <video:title>Stephen Wilson Jr Live in Dublin — Artist Tour Content</video:title>
+      <video:description>Artist tour content shot and delivered the same night by Andrew Heeney, Ireland's fastest turnaround videographer.</video:description>
+      <video:player_loc>https://www.youtube-nocookie.com/embed/pj-wXmXHAZs</video:player_loc>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://www.andrewheeneymedia.com/warewolf-poster.jpg</video:thumbnail_loc>
+      <video:title>Warewolf — Product Ad</video:title>
+      <video:description>Social-first product advertisement filmed and edited by Andrew Heeney.</video:description>
+      <video:content_loc>https://www.andrewheeneymedia.com/warewolf-ad.mp4</video:content_loc>
+    </video:video>
   </url>
   <url>
     <loc>https://www.andrewheeneymedia.com/projects.html</loc>
     <lastmod>2026-08-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/O_Sp5LAhckQ/hqdefault.jpg</video:thumbnail_loc>
+      <video:title>Larry Fleet Live in Dublin — Official Aftermovie</video:title>
+      <video:description>Official event aftermovie filmed and edited by Andrew Heeney.</video:description>
+      <video:player_loc>https://www.youtube-nocookie.com/embed/O_Sp5LAhckQ</video:player_loc>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/HZZT9PzgOm0/hqdefault.jpg</video:thumbnail_loc>
+      <video:title>The Camden Deluxe Dublin — FPV Promo Video</video:title>
+      <video:description>One-take FPV drone promo of The Camden Deluxe venue in Dublin.</video:description>
+      <video:player_loc>https://www.youtube-nocookie.com/embed/HZZT9PzgOm0</video:player_loc>
+    </video:video>
   </url>
 </urlset>
