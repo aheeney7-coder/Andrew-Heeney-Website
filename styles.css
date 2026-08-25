@@ -382,11 +382,10 @@ span.form-msg-error:not(:empty){color:#e89090;font-size:.78rem;margin-top:.35rem
 .proj.p2{grid-column:8/13;grid-row:1;margin-top:10rem}
 .proj.p3{grid-column:1/7;grid-row:2;margin-top:2rem}
 .proj.p4{grid-column:7/13;grid-row:2;margin-top:6rem}
-.proj.p5{grid-column:1/7;grid-row:3;margin-top:5rem}
-.proj.p6{grid-column:7/13;grid-row:3;margin-top:9rem}
+.proj.p5{grid-column:3/11;grid-row:3;margin-top:5rem}
 @media (max-width:900px){
   .proj-stage{gap:2rem 1rem}
-  .proj.p1,.proj.p2,.proj.p3,.proj.p4,.proj.p5,.proj.p6{grid-column:1/13;grid-row:auto;margin:0}
+  .proj.p1,.proj.p2,.proj.p3,.proj.p4,.proj.p5{grid-column:1/13;grid-row:auto;margin:0}
   .view-chip{opacity:1;transform:none}
 }
 
