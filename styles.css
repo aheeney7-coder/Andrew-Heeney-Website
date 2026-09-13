@@ -432,3 +432,12 @@ span.form-msg-error:not(:empty){color:#e89090;font-size:.78rem;margin-top:.35rem
   .web-shot{min-height:280px;border-right:0;border-bottom:1px solid var(--border)}
   .web-copy{padding:1.8rem}
 }
+
+/* ---------- website preview fallback ---------- */
+.shot-fallback{
+  position:absolute;inset:0;display:flex;align-items:center;justify-content:center;text-align:center;
+  padding:1.5rem;font-family:var(--font-display);text-transform:uppercase;font-size:clamp(1rem,2.2vw,1.5rem);
+  color:var(--text-soft);
+  background:radial-gradient(600px 300px at 50% 30%,rgba(212,168,67,.12),transparent 70%),linear-gradient(160deg,#1c1b19,#111112);
+}
+.site-shot img,.web-shot img{position:relative;z-index:1}
