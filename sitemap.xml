@@ -151,4 +151,16 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://www.andrewheeneymedia.com/cooper-international-horse-transport.html</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <video:video>
+      <video:thumbnail_loc>https://i.ytimg.com/vi/PTA6mzwXL30/hqdefault.jpg</video:thumbnail_loc>
+      <video:title>Cooper International Horse Transport — Tattersalls Ireland</video:title>
+      <video:description>A promotional film for Cooper International Horse Transport, capturing the fleet departing Tattersalls Ireland with 40 yearlings bound for Milan.</video:description>
+      <video:player_loc>https://www.youtube-nocookie.com/embed/PTA6mzwXL30</video:player_loc>
+    </video:video>
+  </url>
 </urlset>
