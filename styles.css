@@ -442,3 +442,11 @@ span.form-msg-error:not(:empty){color:#e89090;font-size:.78rem;margin-top:.35rem
   background:radial-gradient(600px 300px at 50% 30%,rgba(212,168,67,.12),transparent 70%),linear-gradient(160deg,#1c1b19,#111112);
 }
 .site-shot img,.web-shot img{position:relative;z-index:1}
+
+/* Quote request form */
+.field small{display:block;color:var(--text-muted);font-size:.78rem;margin-top:.4rem}
+.quote-consent{font-size:.82rem;line-height:1.6;margin:1rem 0 1.4rem;color:var(--text-soft)}
+.quote-consent input{accent-color:var(--accent);margin-right:.45rem}
+.quote-consent p{font-size:.75rem;color:var(--text-muted);margin-top:.5rem}
+.quote-trap{position:absolute;left:-9999px}
+#enquiryForm button:disabled{opacity:.65;cursor:wait}

@@ -50,3 +50,11 @@ Then:
 
 Wired to Formspree endpoint `https://formspree.io/f/xgawlzol` → emails aheeney7@gmail.com.
 Submit once after deploying and confirm the first-submission email from Formspree.
+
+## Quote enquiries
+
+The homepage quote form uses the existing Formspree endpoint xgawlzol. The verified workflow sends notifications to aheeney7@gmail.com. quote.js includes a prepared WhatsApp reply URL and message alongside every customer submission. Irish local numbers are converted to +353; other countries must include their country code.
+
+The WhatsApp link opens a draft for manual review and sending. It does not send a message automatically. Custom HTML email buttons require Formspree Business; the existing plan uses a clickable URL. Quote requests collect a brief rather than calculate a price.
+
+No build step or new secrets are required. Deploy the repository main branch through its connected Vercel project.

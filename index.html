@@ -150,7 +150,7 @@
         <li><a href="#services">Services</a></li>
         <li><a href="#about">About me</a></li>
         <li><a href="#contact">Contact</a></li>
-        <li><a class="btn btn-gold nav-cta" href="#contact">Check availability</a></li>
+        <li><a class="btn btn-gold nav-cta" href="#contact">Get a quote</a></li>
       </ul>
     </nav>
     <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
@@ -351,7 +351,7 @@
         <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Fully insured, travelling nationwide from Dublin</li>
       </ul>
       <div class="hero-actions" style="margin-top:2rem">
-        <a class="btn btn-gold" href="#contact">Check availability</a>
+        <a class="btn btn-gold" href="#contact">Get a quote</a>
       </div>
     </div>
   </div>
@@ -545,7 +545,7 @@
     <h2 class="display">Your next event deserves same-hour content</h2>
     <p>Tell me the date and the venue. If I&rsquo;m free, you&rsquo;ll know today — no pressure, no hard sell.</p>
     <a class="btn btn-gold" href="#contact">
-      Check availability
+      Get a quote
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
     </a>
   </div>
@@ -556,8 +556,8 @@
   <div class="container contact-grid">
     <div class="contact-info reveal">
       <span class="eyebrow">Contact</span>
-      <h2 class="display">Let&rsquo;s check your date</h2>
-      <p>Fastest way to reach me is WhatsApp. Or use the form — I reply to every enquiry within a few hours, usually faster.</p>
+      <h2 class="display">Get a quote</h2>
+      <p>Tell me what you need and I’ll get back to you with availability and a tailored quote. Prefer to chat? You can also reach me on WhatsApp.</p>
       <div class="channels">
         <a class="channel" href="https://wa.me/353834157313" rel="noopener">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg>
@@ -574,49 +574,24 @@
       </div>
     </div>
     <div class="reveal">
-      <div class="form-msg form-msg-success" data-fs-success></div>
-      <div class="form-msg form-msg-error" data-fs-error></div>
-      <form id="enquiryForm" action="https://formspree.io/f/xgawlzol" method="POST" aria-label="Availability enquiry form">
-        <div class="field">
-          <label for="f-name">Your name</label>
-          <input id="f-name" name="name" type="text" autocomplete="name" required data-fs-field>
-          <span class="form-msg form-msg-error" data-fs-error="name"></span>
-        </div>
-        <div class="field">
-          <label for="f-email">Email</label>
-          <input id="f-email" name="email" type="email" autocomplete="email" required data-fs-field>
-          <span class="form-msg form-msg-error" data-fs-error="email"></span>
-        </div>
-        <div class="field">
-          <label for="f-date">Event / shoot date</label>
-          <input id="f-date" name="date" type="date" data-fs-field>
-          <span class="form-msg form-msg-error" data-fs-error="date"></span>
-        </div>
-        <div class="field">
-          <label for="f-type">What do you need?</label>
-          <select id="f-type" name="type" data-fs-field>
-            <option>Event coverage (same-hour edits)</option>
-            <option>Corporate / brand film</option>
-            <option>Social content day</option>
-            <option>Something else</option>
-          </select>
-          <span class="form-msg form-msg-error" data-fs-error="type"></span>
-        </div>
-        <div class="field">
-          <label for="f-msg">Tell me about it</label>
-          <textarea id="f-msg" name="message" placeholder="Venue, audience, what you need delivered on the day…" data-fs-field></textarea>
-          <span class="form-msg form-msg-error" data-fs-error="message"></span>
-        </div>
-        <button class="btn btn-gold" type="submit" data-fs-submit-btn>
-          Send enquiry
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
-        </button>
+      <div id="quote-success" class="form-msg form-msg-success" role="status" aria-live="polite"></div>
+      <div id="quote-error" class="form-msg form-msg-error" role="alert"></div>
+      <form id="enquiryForm" action="https://formspree.io/f/xgawlzol" method="POST" aria-label="Request a quote">
+        <div class="field"><label for="f-name">Your name</label><input id="f-name" name="name" autocomplete="name" maxlength="100" required></div>
+        <div class="field"><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email" maxlength="254" required></div>
+        <div class="field"><label for="f-phone">WhatsApp number</label><input id="f-phone" name="phone" type="tel" autocomplete="tel" placeholder="e.g. +353 83 123 4567" maxlength="25" required aria-describedby="phone-help"><small id="phone-help">Include your country code if you’re outside Ireland.</small></div>
+        <div class="field"><label for="f-type">What do you need?</label><select id="f-type" name="service" required>
+          <option value="">Choose a service</option><option>Event coverage (same-hour edits)</option><option>Corporate / brand film</option><option>Social content day</option><option>Web design & SEO</option><option>Something else</option>
+        </select></div>
+        <div class="field"><label for="f-date">Event / shoot date (if known)</label><input id="f-date" name="date" type="date"></div>
+        <div class="field"><label for="f-location">Venue / location or website</label><input id="f-location" name="location" placeholder="Where is the shoot? Or share your website URL." maxlength="250"></div>
+        <div class="field"><label for="f-budget">Budget (optional)</label><input id="f-budget" name="budget" placeholder="An approximate budget helps me tailor your quote" maxlength="100"></div>
+        <div class="field"><label for="f-msg">Tell me about your project</label><textarea id="f-msg" name="message" placeholder="What are you planning? What do you need delivered? For a website, tell me what your business needs." maxlength="3000" required></textarea></div>
+        <div class="quote-consent"><label><input name="contact_permission" type="checkbox" value="Customer agreed to email or WhatsApp contact about this quote" required> I’m happy to be contacted by email or WhatsApp about this quote request.</label><p>Your details are used to respond to your enquiry and prepare your quote.</p></div>
+        <div class="quote-trap" aria-hidden="true"><label for="f-company">Leave this empty</label><input id="f-company" name="_gotcha" tabindex="-1" autocomplete="off"></div>
+        <button class="btn btn-gold" type="submit">Request my quote <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg></button>
       </form>
-      <script>
-        window.formspree = window.formspree || function () { (formspree.q = formspree.q || []).push(arguments); };
-        formspree('initForm', { formElement: '#enquiryForm', formId: 'xgawlzol' });
-      </script>
-      <script src="https://unpkg.com/@formspree/ajax@1" defer></script>
+      <script src="quote.js?v=1" defer></script>
     </div>
   </div>
 </section>
