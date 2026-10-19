@@ -134,6 +134,7 @@
   ]
 }
 </script>
+<link rel="stylesheet" href="home.css?v=1">
 </head>
 <body>
 
@@ -160,49 +161,21 @@
   </div>
 </header>
 
-<!-- ================= HERO ================= -->
-<section class="hero">
-  <div class="hero-bg" aria-hidden="true"></div>
-  <div class="container hero-grid">
-    <div>
-      <img class="hero-logo reveal visible" src="logo.webp" width="1000" height="362" fetchpriority="high" alt="AH — Andrew Heeney. Film, Content, Production.">
-      <h1>Ireland&rsquo;s <span>Fastest</span> Turnaround</h1>
-      <p class="hero-sub">
-        No standard videos. No standard timelines. I shoot your event, brand film or social content —
-        then <strong>edit on site and deliver within the hour</strong>, while your audience is still buzzing.
-      </p>
-      <div class="hero-actions">
-        <a class="btn btn-gold" href="projects.html">
-          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="6 4 20 12 6 20 6 4"/></svg>
-          See my work
-        </a>
-        <a class="btn btn-line" href="#about">More about me</a>
-      </div>
-    </div>
-    <div class="collage">
-      <button class="frame" data-video="youtube:O_Sp5LAhckQ" aria-label="Play: Larry Fleet Live in Dublin — Official Aftermovie">
-        <img src="https://i.ytimg.com/vi/O_Sp5LAhckQ/maxresdefault.jpg" width="1280" height="720" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/O_Sp5LAhckQ/hqdefault.jpg'" alt="" loading="lazy">
-        <span class="frame-play" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="6 4 20 12 6 20 6 4"/></svg></span>
-        <span class="frame-label">Aftermovie</span>
-      </button>
-      <button class="frame" data-video="youtube:HZZT9PzgOm0" aria-label="Play: The Camden Deluxe Dublin — FPV Promo Video">
-        <img src="https://i.ytimg.com/vi/HZZT9PzgOm0/maxresdefault.jpg" width="1280" height="720" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/HZZT9PzgOm0/hqdefault.jpg'" alt="" loading="lazy">
-        <span class="frame-play" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="6 4 20 12 6 20 6 4"/></svg></span>
-        <span class="frame-label">FPV Promo</span>
-      </button>
-      <button class="frame" data-video="youtube:pj-wXmXHAZs" aria-label="Play: Stephen Wilson Jr Live in Dublin — Quick Turnaround Content">
-        <video autoplay muted loop playsinline preload="metadata" src="stephen-wilson-loop.mp4" aria-hidden="true"></video>
-        <span class="frame-play" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="6 4 20 12 6 20 6 4"/></svg></span>
-        <span class="frame-label">Quick Turnaround Content</span>
-      </button>
-      <button class="frame" data-video="local:hyde-and-seek.mp4" aria-label="Play: This Is Hyde &amp; Seek — Social Reel">
-        <video autoplay muted loop playsinline preload="metadata" src="hyde-and-seek.mp4" aria-hidden="true"></video>
-        <span class="frame-play" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="6 4 20 12 6 20 6 4"/></svg></span>
-        <span class="frame-label">Social Reel — Hyde &amp; Seek</span>
-      </button>
-    </div>
-  </div>
-</section>
+<!-- Film-led landing page -->
+<main id="main-content">
+<section class="landing-hero"><div class="container landing-grid">
+<div class="landing-intro"><span class="eyebrow">Andrew Heeney / Film &amp; content</span><h1>Big moments.<br><span>Made to be seen.</span></h1><p>From ringside to centre stage. Films for artists, brands and events — captured with energy, delivered with speed.</p></div>
+<div class="landing-media"><button class="landing-film" data-video="youtube:pj-wXmXHAZs" aria-label="Watch Stephen Wilson Jr live in Dublin"><video id="homePreview" muted loop playsinline preload="none" poster="video-covers/home-tour.jpg" aria-hidden="true" data-src="home-preview.mp4"></video><span class="landing-play" aria-hidden="true">▶</span><span class="landing-caption"><small>Featured film / Touring</small><strong>Stephen Wilson Jr.</strong><span>Watch the film ↗</span></span></button><div class="landing-side"><a href="boxing.html"><img src="video-covers/MOGLZ8o4qmI.jpg" width="960" height="1706" alt="Al Foran reporting at a boxing event"><span>Boxing ↗</span></a><a href="ibiza-yachts.html"><img src="video-covers/Ev1l9dUayIU.jpg" width="640" height="1138" alt="Yacht film from the Ibiza collection"><span>Ibiza &amp; yachts ↗</span></a></div><button class="preview-toggle" id="previewToggle" aria-label="Play preview" hidden>Play preview</button></div>
+<div class="landing-actions"><a class="btn btn-gold" href="projects.html">Explore the work <span aria-hidden="true">↗</span></a><a class="btn btn-line" href="#contact">Let’s talk</a><p>Based in Dublin · Available for travel</p></div>
+</div></section>
+<section class="work-routes"><div class="container"><div class="route-heading"><span class="eyebrow">Find your kind of project</span><a href="projects.html">All projects ↗</a></div><div class="route-grid">
+<a href="boxing.html"><span>01 / Sport</span><h2>Boxing</h2><p>Fight week. Interviews. Highlights.</p><b aria-hidden="true">↗</b></a>
+<a href="touring.html"><span>02 / Music</span><h2>Touring &amp; live</h2><p>The artist. The crowd. The atmosphere.</p><b aria-hidden="true">↗</b></a>
+<a href="alp.html"><span>03 / Brands</span><h2>Brand &amp; event films</h2><p>Explore the ALP collection.</p><b aria-hidden="true">↗</b></a>
+<a href="real-estate.html"><span>04 / Property</span><h2>Real estate</h2><p>Spaces with a story to tell.</p><b aria-hidden="true">↗</b></a>
+<a href="ibiza-yachts.html"><span>05 / Lifestyle</span><h2>Ibiza &amp; yachts</h2><p>Life on board and beyond.</p><b aria-hidden="true">↗</b></a>
+<a href="websites.html"><span>06 / Digital</span><h2>Websites</h2><p>Explore the websites I’ve built.</p><b aria-hidden="true">↗</b></a>
+</div></div></section>
 
 <!-- ================= CLIENT MARQUEE ================= -->
 <div class="marquee" aria-label="Clients">
@@ -603,6 +576,7 @@
 </section>
 
 <!-- ================= FOOTER ================= -->
+</main>
 <footer class="site-footer">
   <div class="container">
     <div class="footer-grid">
@@ -678,6 +652,7 @@ const defaultFrame=modalFrame.innerHTML;
 let lastFocus=null;
 function openModal(html){
   lastFocus=document.activeElement;
+  document.getElementById("homePreview")?.pause();
   if(html)modalFrame.innerHTML=html;
   modal.classList.add('open');document.body.style.overflow='hidden';
   modal.querySelector('.modal-close').focus();
@@ -701,6 +676,17 @@ document.querySelectorAll('[data-close-reel]').forEach(b=>b.addEventListener('cl
 modal.addEventListener('click',e=>{if(e.target===modal)closeReel()});
 addEventListener('keydown',e=>{if(e.key==='Escape'&&modal.classList.contains('open'))closeReel()});
 
+// Lightweight motion preview: respect reduced motion and data-saving preferences.
+const preview=document.getElementById('homePreview');
+const previewToggle=document.getElementById('previewToggle');
+const reducedMotion=matchMedia('(prefers-reduced-motion: reduce)');
+function syncPreviewButton(){previewToggle.textContent=preview.paused?'Play preview':'Pause preview';previewToggle.setAttribute('aria-label',previewToggle.textContent)}
+function startPreview(){if(!preview.getAttribute('src'))preview.src=preview.dataset.src;preview.play().catch(()=>{});}
+previewToggle.hidden=false;
+previewToggle.addEventListener('click',()=>{if(preview.paused)startPreview();else preview.pause()});
+preview.addEventListener('play',syncPreviewButton);preview.addEventListener('pause',syncPreviewButton);
+if(!reducedMotion.matches&&!navigator.connection?.saveData)startPreview();
+reducedMotion.addEventListener('change',()=>{if(reducedMotion.matches)preview.pause()});
 // reveal on scroll
 const io=new IntersectionObserver(entries=>{
   entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target)}});
