@@ -62,6 +62,7 @@
 
 @media (max-width:768px){.all-grid{grid-template-columns:1fr}}
 </style>
+<link rel="stylesheet" href="portfolio.css?v=1">
 </head>
 <body>
 
@@ -89,43 +90,30 @@
 
 <section class="page-head">
   <div class="container">
-    <span class="eyebrow">All work</span>
-    <h1 class="display" style="font-size:clamp(2.4rem,6vw,4.2rem)">Projects</h1>
+    <span class="eyebrow">The portfolio</span>
+    <h1 class="display" style="font-size:clamp(2.4rem,6vw,4.2rem)">Good stories.<br>Real projects.</h1>
     <p style="color:var(--text-muted);max-width:52ch;margin-top:1rem">
-      Film, content and production across artists, brands, properties and travel. Filter by category or open a collection to explore the work.
+      Explore the work by client, artist or setting. Open a collection to watch the films and see the story behind each project.
     </p>
     <div class="filters" role="group" aria-label="Filter projects by category">
-      <button class="filter active" data-filter="all">All</button>
-      <button class="filter" data-filter="multicam">Multicam</button>
-      <button class="filter" data-filter="tour">Artist Tour</button>
-      <button class="filter" data-filter="events">Events</button>
-      <button class="filter" data-filter="brand">Brand &amp; FPV</button>
-      <button class="filter" data-filter="ads">Product Ads</button>
-      <button class="filter" data-filter="social">Social Reels</button>
-      <button class="filter" data-filter="weddings">Weddings</button>
-      <button class="filter" data-filter="realestate">Real Estate</button>
-      <button class="filter" data-filter="yachts">Ibiza &amp; Yachts</button>
-      <button class="filter" data-filter="youtube">YouTube Content</button>
+      <button class="filter active" aria-pressed="true" data-filter="all">All</button>
+      <button class="filter" aria-pressed="false" data-filter="multicam">Multicam</button>
+      <button class="filter" aria-pressed="false" data-filter="tour">Artist Tour</button>
+      <button class="filter" aria-pressed="false" data-filter="events">Events</button>
+      <button class="filter" aria-pressed="false" data-filter="brand">Brand &amp; FPV</button>
+      <button class="filter" aria-pressed="false" data-filter="ads">Product Ads</button>
+      <button class="filter" aria-pressed="false" data-filter="social">Social Reels</button>
+      <button class="filter" aria-pressed="false" data-filter="weddings">Weddings</button>
+      <button class="filter" aria-pressed="false" data-filter="realestate">Real Estate</button>
+      <button class="filter" aria-pressed="false" data-filter="yachts">Ibiza &amp; Yachts</button>
+      <button class="filter" aria-pressed="false" data-filter="youtube">YouTube Content</button>
     </div>
   </div>
 </section>
 
-<section>
+<section class="collection-section" aria-labelledby="collections-title"><div class="container"><div class="portfolio-section-head"><div><span class="eyebrow">Explore by client &amp; subject</span><h2 id="collections-title">Collections</h2></div><p>One project. The full picture.</p></div><div class="collections-grid"><a class="collection-card alp-feature proj" data-cat="brand" href="alp.html" aria-label="Explore the ALP collection"><div class="feature-brand"><span class="eyebrow">Featured client</span><div class="client-logo-panel"><img src="client-logos/alp.webp" width="1200" height="492" alt="ALP"></div><h2>Inside the ALP collection.</h2><p>Press conference coverage and selected brand work, brought together in one place.</p><span class="collection-link">Explore collection <span aria-hidden="true">↗</span></span></div><div class="feature-image"><img src="video-covers/N4kfutK9i1Y.jpg" width="640" height="1138" alt="A frame from the ALP press conference film"><span class="film-label">ALP / Press conference</span></div></a><a class="collection-card proj" data-cat="tour" href="touring.html#nathan-carter"><div class="collection-image"><img src="video-covers/JAqmkkQjOdc.jpg" alt="" loading="lazy"><span class="film-count">4 films</span></div><div class="collection-info"><h3>Nathan Carter</h3><p>Live shows & music videos</p><span class="collection-link">View collection <span aria-hidden="true">↗</span></span></div></a><a class="collection-card proj" data-cat="tour" href="touring.html#tumbling-paddies"><div class="collection-image"><img src="video-covers/AGV7nJ6QiDA.jpg" alt="" loading="lazy"><span class="film-count">1 film</span></div><div class="collection-info"><h3>The Tumbling Paddies</h3><p>Cowboys and Heroes</p><span class="collection-link">View collection <span aria-hidden="true">↗</span></span></div></a><a class="collection-card proj" data-cat="events" href="alan-clarke.html"><div class="collection-image"><img src="video-covers/luyO4psRdPE.jpg" alt="" loading="lazy"><span class="film-count">2 films</span></div><div class="collection-info"><h3>Alan Clarke</h3><p>Big News Coming Soon · Live podcast</p><span class="collection-link">View collection <span aria-hidden="true">↗</span></span></div></a><a class="collection-card proj" data-cat="events" href="insignia-nights.html"><div class="collection-image"><img src="video-covers/Prspnt5hOGI.jpg" alt="" loading="lazy"><span class="film-count">2 films</span></div><div class="collection-info"><h3>Insignia Nights</h3><p>Nightlife & event films</p><span class="collection-link">View collection <span aria-hidden="true">↗</span></span></div></a><a class="collection-card proj" data-cat="social" href="wiki-woo.html"><div class="collection-image"><img src="video-covers/4EnOEHqzvXc.jpg" alt="" loading="lazy"><span class="film-count">2 films</span></div><div class="collection-info"><h3>Wiki Woo</h3><p>Hotel, rooms & sunset</p><span class="collection-link">View collection <span aria-hidden="true">↗</span></span></div></a><a class="collection-card proj" data-cat="brand" href="taurus-productions.html"><div class="collection-image"><img src="video-covers/58ou0eB4VXo.jpg" alt="" loading="lazy"><span class="film-count">1 film</span></div><div class="collection-info"><h3>Taurus Productions</h3><p>A musical in Bray · Production showcase</p><span class="collection-link">View collection <span aria-hidden="true">↗</span></span></div></a><a class="collection-card proj" data-cat="social" href="chi-kee-wun.html"><div class="collection-image"><img src="video-covers/x-b1HTs01Fc.jpg" alt="" loading="lazy"><span class="film-count">1 film</span></div><div class="collection-info"><h3>Chi Kee Wun</h3><p>Dining & nightlife</p><span class="collection-link">View collection <span aria-hidden="true">↗</span></span></div></a><a class="collection-card proj" data-cat="events" href="molloys-christmas-launch.html"><div class="collection-image"><img src="video-covers/mNwq1Z4NChI.jpg" alt="" loading="lazy"><span class="film-count">1 film</span></div><div class="collection-info"><h3>Molloy’s Christmas Launch</h3><p>Christmas launch · Event film</p><span class="collection-link">View collection <span aria-hidden="true">↗</span></span></div></a><a class="collection-card proj" data-cat="realestate" href="real-estate.html"><div class="collection-image"><img src="video-covers/SOJ6R8nhfII.jpg" alt="" loading="lazy"><span class="film-count">2 films</span></div><div class="collection-info"><h3>Real Estate Films</h3><p>Property tours & interiors</p><span class="collection-link">View collection <span aria-hidden="true">↗</span></span></div></a><a class="collection-card proj" data-cat="yachts" href="ibiza-yachts.html"><div class="collection-image"><img src="video-covers/Ev1l9dUayIU.jpg" alt="" loading="lazy"><span class="film-count">3 films</span></div><div class="collection-info"><h3>Ibiza & Yachts</h3><p>Life on board · Ibiza</p><span class="collection-link">View collection <span aria-hidden="true">↗</span></span></div></a></div></div></section>
+<section class="individual-section"><div class="container portfolio-section-head"><div><span class="eyebrow">More from the portfolio</span><h2>Individual projects</h2></div></div>
   <div class="container all-grid">
-<a class="proj" data-cat="tour" href="touring.html#nathan-carter" aria-label="View: Nathan Carter collection"><span class="proj-bar"><span class="t">Nathan Carter</span><span class="c">Artist collection</span></span><span class="proj-frame"><img src="video-covers/JAqmkkQjOdc.jpg" alt="" loading="lazy" style="width:100%;height:100%;object-fit:cover"><span class="view-chip">View collection</span></span></a>
-<a class="proj" data-cat="tour" href="touring.html#tumbling-paddies" aria-label="View: The Tumbling Paddies collection"><span class="proj-bar"><span class="t">The Tumbling Paddies</span><span class="c">Artist collection</span></span><span class="proj-frame"><img src="video-covers/AGV7nJ6QiDA.jpg" alt="" loading="lazy" style="width:100%;height:100%;object-fit:cover"><span class="view-chip">View collection</span></span></a>
-
-<a class="proj" data-cat="events" href="alan-clarke.html" aria-label="View: Alan Clarke"><span class="proj-bar"><span class="t">Alan Clarke</span><span class="c">Collection</span></span><span class="proj-frame"><img src="video-covers/luyO4psRdPE.jpg" alt="" loading="lazy" style="width:100%;height:100%;object-fit:cover"><span class="view-chip">View collection</span></span></a>
-<a class="proj" data-cat="events" href="insignia-nights.html" aria-label="View: Insignia Nights"><span class="proj-bar"><span class="t">Insignia Nights</span><span class="c">Collection</span></span><span class="proj-frame"><img src="video-covers/Prspnt5hOGI.jpg" alt="" loading="lazy" style="width:100%;height:100%;object-fit:cover"><span class="view-chip">View collection</span></span></a>
-<a class="proj" data-cat="social" href="wiki-woo.html" aria-label="View: Wiki Woo"><span class="proj-bar"><span class="t">Wiki Woo</span><span class="c">Collection</span></span><span class="proj-frame"><img src="video-covers/4EnOEHqzvXc.jpg" alt="" loading="lazy" style="width:100%;height:100%;object-fit:cover"><span class="view-chip">View collection</span></span></a>
-<a class="proj" data-cat="brand" href="taurus-productions.html" aria-label="View: Taurus Productions"><span class="proj-bar"><span class="t">Taurus Productions</span><span class="c">Collection</span></span><span class="proj-frame"><img src="video-covers/58ou0eB4VXo.jpg" alt="" loading="lazy" style="width:100%;height:100%;object-fit:cover"><span class="view-chip">View collection</span></span></a>
-<a class="proj" data-cat="social" href="chi-kee-wun.html" aria-label="View: Chi Kee Wun"><span class="proj-bar"><span class="t">Chi Kee Wun</span><span class="c">Collection</span></span><span class="proj-frame"><img src="video-covers/x-b1HTs01Fc.jpg" alt="" loading="lazy" style="width:100%;height:100%;object-fit:cover"><span class="view-chip">View collection</span></span></a>
-<a class="proj" data-cat="events" href="molloys-christmas-launch.html" aria-label="View: Molloy’s Christmas Launch"><span class="proj-bar"><span class="t">Molloy’s Christmas Launch</span><span class="c">Collection</span></span><span class="proj-frame"><img src="video-covers/mNwq1Z4NChI.jpg" alt="" loading="lazy" style="width:100%;height:100%;object-fit:cover"><span class="view-chip">View collection</span></span></a>
-
-<a class="proj" data-cat="brand" href="alp.html" aria-label="View: ALP — Client Collection"><span class="proj-bar"><span class="t">ALP — Client Collection</span><span class="c">Collection</span></span><span class="proj-frame"><img src="video-covers/N4kfutK9i1Y.jpg" alt="" loading="lazy" style="width:100%;height:100%;object-fit:cover"><span class="view-chip">View collection</span></span></a>
-<a class="proj" data-cat="realestate" href="real-estate.html" aria-label="View: Real Estate Films"><span class="proj-bar"><span class="t">Real Estate Films</span><span class="c">Collection</span></span><span class="proj-frame"><img src="video-covers/SOJ6R8nhfII.jpg" alt="" loading="lazy" style="width:100%;height:100%;object-fit:cover"><span class="view-chip">View collection</span></span></a>
-<a class="proj" data-cat="yachts" href="ibiza-yachts.html" aria-label="View: Ibiza & Yachts"><span class="proj-bar"><span class="t">Ibiza & Yachts</span><span class="c">Collection</span></span><span class="proj-frame"><img src="video-covers/Ev1l9dUayIU.jpg" alt="" loading="lazy" style="width:100%;height:100%;object-fit:cover"><span class="view-chip">View collection</span></span></a>
-
     <a class="proj" data-cat="brand" aria-label="View: Cooper International Horse Transport — Tattersalls Ireland" href="cooper-international-horse-transport.html">
       <span class="proj-bar"><span class="t">Cooper International Horse Transport</span><span class="c">Corporate</span></span>
       <span class="proj-frame">
@@ -332,12 +320,14 @@ toggle.addEventListener('click',()=>{
 
 // filters
 document.querySelectorAll('.filter').forEach(f=>f.addEventListener('click',()=>{
-  document.querySelectorAll('.filter').forEach(x=>x.classList.remove('active'));
+  document.querySelectorAll('.filter').forEach(x=>{x.classList.remove('active');x.setAttribute('aria-pressed','false')});
+  f.setAttribute('aria-pressed','true');
   f.classList.add('active');
   const cat=f.dataset.filter;
   document.querySelectorAll('.proj').forEach(p=>{
     p.classList.toggle('hidden',cat!=='all'&&p.dataset.cat!==cat);
   });
+  document.querySelectorAll('.collection-section,.individual-section').forEach(section=>{section.hidden=!section.querySelector('.proj:not(.hidden)')});
 }));
 
 // video modal
