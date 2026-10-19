@@ -9,6 +9,13 @@ function filterPhotos(category){
  const selected=filters.find(b=>b.dataset.filter===category)||filters[0];category=selected.dataset.filter;
  filters.forEach(b=>{const active=b===selected;b.classList.toggle('active',active);b.setAttribute('aria-pressed',String(active))});
  cards.forEach(card=>card.hidden=category!=='all'&&!(card.dataset.categories||card.dataset.category).split(' ').includes(category));
+document.querySelectorAll('[data-story]').forEach(story=>{
+  const shown=[...story.querySelectorAll('[data-category]')].filter(card=>!card.hidden);
+  story.hidden=shown.length===0;
+  story.classList.toggle('filtered-single',shown.length===1);
+  story.querySelector('[data-story-count]').textContent=String(shown.length).padStart(2,'0')+' frame'+(shown.length===1?'':'s');
+  const lead=story.querySelector('.story-lead');if(lead)lead.hidden=![...lead.querySelectorAll('[data-category]')].some(card=>!card.hidden);
+ });
  visible=photos.map((p,i)=>category==='all'||(p.categories||[p.category]).includes(category)?i:-1).filter(i=>i!==-1);
  document.getElementById('photoCount').textContent=visible.length+' photograph'+(visible.length===1?'':'s')+' · '+selected.childNodes[0].textContent.trim();
 }
