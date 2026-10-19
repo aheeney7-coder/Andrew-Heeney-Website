@@ -8,8 +8,8 @@ let visible=photos.map((_,i)=>i),current=0,opener=null;
 function filterPhotos(category){
  const selected=filters.find(b=>b.dataset.filter===category)||filters[0];category=selected.dataset.filter;
  filters.forEach(b=>{const active=b===selected;b.classList.toggle('active',active);b.setAttribute('aria-pressed',String(active))});
- cards.forEach(card=>card.hidden=category!=='all'&&card.dataset.category!==category);
- visible=photos.map((p,i)=>category==='all'||p.category===category?i:-1).filter(i=>i!==-1);
+ cards.forEach(card=>card.hidden=category!=='all'&&!(card.dataset.categories||card.dataset.category).split(' ').includes(category));
+ visible=photos.map((p,i)=>category==='all'||(p.categories||[p.category]).includes(category)?i:-1).filter(i=>i!==-1);
  document.getElementById('photoCount').textContent=visible.length+' photograph'+(visible.length===1?'':'s')+' · '+selected.childNodes[0].textContent.trim();
 }
 filters.forEach(button=>button.addEventListener('click',()=>{filterPhotos(button.dataset.filter);history.replaceState(null,'','#'+button.dataset.filter)}));
