@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <meta name="description" content="Save the Bermingham Cameras Big Sale on Saturday, 14 November 2026 at 10 am in Dublin.">
+  <title>Bermingham Cameras Big Sale | Andrew Heeney Media</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #101112; color: #f6f3ed; font: 1rem/1.55 system-ui, sans-serif; }
+    main { max-width: 46rem; margin: auto; padding: clamp(1.25rem, 5vw, 3rem); }
+    .brand { display: inline-block; margin-bottom: 2rem; }
+    .brand img { display: block; width: 9rem; height: auto; }
+    h1 { margin: 0 0 1rem; font-size: clamp(2.3rem, 8vw, 4.5rem); line-height: 1.05; }
+    h2 { margin: 0; line-height: 1.2; }
+    .date { color: #ebc975; font-weight: 700; }
+    .actions { display: flex; flex-wrap: wrap; gap: .65rem; margin-top: 1.25rem; }
+    .button { display: inline-block; border: 1px solid #b6a98e; border-radius: .6rem; padding: .65rem 1rem; color: inherit; text-decoration: none; background: transparent; cursor: pointer; font: inherit; }
+    .primary { background: #ebc975; color: #15120b; border-color: #ebc975; font-weight: 700; }
+    :focus-visible { outline: 2px solid #fff; outline-offset: 3px; }
+    dialog { width: min(29rem, calc(100% - 2rem)); background: #1c1d20; color: inherit; border: 1px solid #625b4b; border-radius: 1rem; padding: 1.5rem; }
+    dialog::backdrop { background: #000b; }
+    dialog form { margin-top: 1rem; }
+  </style>
+</head>
+<body>
+  <main>
+    <a class="brand" href="/"><img src="/logo.webp" width="1000" height="362" alt="Andrew Heeney Media home"></a>
+    <h1>Bermingham Cameras Big Sale</h1>
+    <p class="date"><time datetime="2026-11-14T10:00:00+00:00">Saturday, 14 November 2026 at 10 am</time> Dublin time</p>
+    <p>Bermingham Cameras<br>9 Burgh Quay, Dublin 2, D02 FD85</p>
+    <div class="actions">
+      <a class="button primary" id="add-calendar" href="/bermingham-sale.ics">Add to calendar</a>
+      <a class="button" href="https://www.google.com/maps/search/?api=1&amp;query=Bermingham+Cameras%2C+9+Burgh+Quay%2C+Dublin+2%2C+D02+FD85%2C+Ireland">Open in Google Maps</a>
+      <a class="button" href="https://berminghamcameras.ie/">Store website</a>
+    </div>
+  </main>
+  <dialog id="calendar-prompt" aria-labelledby="calendar-title">
+    <h2 id="calendar-title">Add the Big Sale to your calendar?</h2>
+    <p>Saturday, 14 November at 10 am Dublin time<br>Bermingham Cameras, 9 Burgh Quay, Dublin 2</p>
+    <div class="actions">
+      <a class="button primary" href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Bermingham+Cameras+Big+Sale&amp;dates=20261114T100000Z%2F20261114T110000Z&amp;ctz=Europe%2FDublin&amp;location=Bermingham+Cameras%2C+9+Burgh+Quay%2C+Dublin+2%2C+D02+FD85%2C+Ireland&amp;details=Sale+starts+at+10+am+Dublin+time.%0AGoogle+Maps%3A+https%3A%2F%2Fwww.google.com%2Fmaps%2Fsearch%2F%3Fapi%3D1%26query%3DBermingham%2BCameras%252C%2B9%2BBurgh%2BQuay%252C%2BDublin%2B2%252C%2BD02%2BFD85%252C%2BIreland">Google Calendar</a>
+      <a class="button" href="/bermingham-sale.ics">Apple, Outlook or other calendar</a>
+      <a class="button" href="https://www.google.com/maps/search/?api=1&amp;query=Bermingham+Cameras%2C+9+Burgh+Quay%2C+Dublin+2%2C+D02+FD85%2C+Ireland">Open in Google Maps</a>
+    </div>
+    <form method="dialog"><button class="button" autofocus>Close</button></form>
+  </dialog>
+  <script>
+    const calendarPrompt = document.getElementById('calendar-prompt');
+    const calendarLink = document.getElementById('add-calendar');
+
+    if (typeof calendarPrompt.showModal === 'function') {
+      calendarLink.addEventListener('click', (event) => {
+        event.preventDefault();
+        calendarPrompt.showModal();
+      });
+      calendarPrompt.showModal();
+      calendarPrompt.addEventListener('close', () => calendarLink.focus());
+    }
+  </script>
+</body>
+</html>

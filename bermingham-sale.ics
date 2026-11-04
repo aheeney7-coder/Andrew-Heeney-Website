@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Andrew Heeney Media//Sale Calendar//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:bermingham-sale-20261114@andrewheeneymedia.com
+DTSTAMP:20261104T181144Z
+DTSTART:20261114T100000Z
+SUMMARY:Bermingham Cameras Big Sale
+LOCATION:Bermingham Cameras\, 9 Burgh Quay\, Dublin 2\, D02 FD85\, Ireland
+DESCRIPTION:Sale starts at 10 am Dublin time.\nGoogle Maps: https://www.goo
+ gle.com/maps/search/?api=1&query=Bermingham+Cameras%2C+9+Burgh+Quay%2C+Dub
+ lin+2%2C+D02+FD85%2C+Ireland
+URL:https://www.andrewheeneymedia.com/bermingham-sale.html
+END:VEVENT
+END:VCALENDAR
