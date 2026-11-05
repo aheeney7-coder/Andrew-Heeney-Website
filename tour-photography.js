@@ -10,7 +10,12 @@ function showPhoto(index){
  previous.disabled=position===0;next.disabled=position===visible.length-1;
 }
 document.querySelectorAll('[data-tour-photo]').forEach(link=>link.addEventListener('click',event=>{
- if(!viewer.showModal)return;event.preventDefault();opener=link;showPhoto(Number(link.dataset.tourPhoto));viewer.showModal();document.body.style.overflow='hidden';document.getElementById('closePhoto').focus();
+ if(!viewer.showModal)return;
+ event.preventDefault();
+ opener=link;
+ const collection = link.closest('.artist-folder');
+ visible = Array.from(collection.querySelectorAll('[data-tour-photo]'), photoLink => Number(photoLink.dataset.tourPhoto));
+ showPhoto(Number(link.dataset.tourPhoto));viewer.showModal();document.body.style.overflow='hidden';document.getElementById('closePhoto').focus();
 }));
 function movePhoto(delta){const position=visible.indexOf(current)+delta;if(position>=0&&position<visible.length)showPhoto(visible[position])}
 previous.addEventListener('click',()=>movePhoto(-1));next.addEventListener('click',()=>movePhoto(1));
