@@ -33,69 +33,39 @@
   margin-top: 24px;
 }
 
-.landing-media { position: relative; min-width: 0; }
-
-.landing-film {
-  display: block;
-  width: 100%;
-  aspect-ratio: 5 / 4;
-  position: relative;
-  overflow: hidden;
-  background: #19191b;
-  border: 1px solid #ffffff26;
+.home-business-proof {
+  padding: clamp(20px, 3vw, 36px);
+  background: var(--surface);
+  border: 1px solid var(--border);
   border-radius: 10px;
-  text-align: left;
-  cursor: pointer;
+  scroll-margin-top: 94px;
 }
 
-.landing-film video {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.home-business-proof h2 {
+  font-family: var(--font-display);
+  font-size: clamp(1.15rem, 2vw, 1.55rem);
+  line-height: 1.2;
+  margin-bottom: 8px;
 }
 
-.landing-caption {
-  position: absolute;
-  inset: auto 0 0;
+.home-business-proof a {
   display: grid;
-  gap: 4px;
-  padding: 55px 20px 19px;
-  background: linear-gradient(transparent, #000e);
-  color: #fff;
+  gap: 3px;
+  padding: 13px 0;
+  border-bottom: 1px solid var(--border);
 }
 
-.landing-caption strong { font-size: 1.15rem; }
-.landing-caption > span { font-size: .78rem; }
+.home-business-proof a:last-child { border-bottom: 0; padding-bottom: 0; }
 
-.landing-play {
-  position: absolute;
-  top: 47%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: grid;
-  place-items: center;
-  height: 54px;
-  width: 54px;
-  background: #000a;
-  border: 1px solid #fff8;
-  border-radius: 50%;
-  color: #fff;
+.home-business-proof strong {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
 }
 
-.preview-toggle {
-  position: absolute;
-  top: 12px;
-  left: 12px;
-  min-height: 44px;
-  background: #000b;
-  border: 1px solid #fff6;
-  border-radius: 5px;
-  padding: 6px 10px;
-  color: #fff;
-  font-size: .7rem;
-  cursor: pointer;
-}
+.home-business-proof strong span { color: var(--accent); }
+.home-business-proof a > span { color: var(--text-soft); font-size: .88rem; }
+.home-business-proof a:hover strong { color: var(--accent); }
 
 .home-services, .home-about {
   padding: clamp(42px, 6vw, 80px) 0;
@@ -197,10 +167,6 @@
   .landing-summary { font-size: .93rem; }
   .landing-actions { margin-top: 18px; gap: 10px; }
   .landing-actions .btn { padding: .8rem .95rem; font-size: .76rem; }
-  .landing-film { aspect-ratio: 16 / 9; }
-  .landing-play { width: 44px; height: 44px; }
-  .landing-caption { padding: 35px 14px 13px; }
-  .landing-caption strong { font-size: .95rem; }
   .home-more-services { grid-template-columns: 1fr; }
   .home-about-grid { grid-template-columns: 1fr; gap: 18px; }
   .home-about img { width: 110px; }
