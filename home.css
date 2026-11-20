@@ -154,12 +154,73 @@
 #contact { scroll-margin-top: 78px; }
 .site-header .nav-links .btn-gold { color: var(--on-accent); }
 
+.home-recent { padding: 12px 0 48px; scroll-margin-top: 96px; }
+
+.home-recent-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 280px);
+  align-items: center;
+  gap: clamp(24px, 5vw, 72px);
+  padding: clamp(22px, 4vw, 48px);
+  border: 1px solid #d4af3750;
+  border-radius: 12px;
+  background: radial-gradient(ellipse at 90% 20%, #63372b60, transparent 65%), var(--surface);
+}
+
+.home-recent-copy h2 {
+  font-family: var(--font-display);
+  font-size: clamp(1.9rem, 4vw, 3.5rem);
+  line-height: 1.05;
+  letter-spacing: -.04em;
+  margin-bottom: 22px;
+}
+
+.home-recent-copy > p:not(.eyebrow) { color: var(--text-soft); max-width: 44ch; }
+.home-recent-copy .btn { cursor: pointer; }
+.home-recent-poster {
+  display: block;
+  position: relative;
+  width: 100%;
+  aspect-ratio: 9 / 16;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: #111;
+  cursor: pointer;
+}
+
+.home-recent-poster img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.home-recent-poster > span {
+  position: absolute;
+  inset: 0;
+  width: 58px;
+  height: 58px;
+  margin: auto;
+  display: grid;
+  place-items: center;
+  border: 1px solid #ffffff80;
+  border-radius: 50%;
+  background: #111b;
+  color: #fff;
+  font-size: 20px;
+  padding-left: 3px;
+}
+
+.home-recent button:focus-visible { outline: 2px solid var(--accent); outline-offset: 5px; }
+.modal.portrait .modal-box { width: min(400px, 100%, 42.1875vh); }
+.modal.portrait .modal-frame { aspect-ratio: 9 / 16; }
+
 @media (max-width: 860px) {
   .landing-hero { padding-top: 109px; }
   .home-service-grid { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 650px) {
+  .home-recent-card { grid-template-columns: 1fr; gap: 26px; }
+  .home-recent-poster { max-width: 260px; justify-self: center; }
+  .home-recent-copy .eyebrow { font-size: .65rem; }
+  .home-recent-copy .btn { font-size: .76rem; padding: .8rem .95rem; }
   .landing-hero { padding: 102px 0 30px; }
   .landing-grid { grid-template-columns: 1fr; }
   .landing-intro .eyebrow { font-size: .63rem; margin-bottom: 13px; }

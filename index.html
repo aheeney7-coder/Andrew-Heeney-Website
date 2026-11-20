@@ -84,7 +84,7 @@
 }
 </script>
 <link rel="stylesheet" href="film-library.css?v=1">
-<link rel="stylesheet" href="home.css?v=3">
+<link rel="stylesheet" href="home.css?v=4">
 </head>
 <body>
 
@@ -153,6 +153,26 @@
   </div>
 </div>
 
+<section class="home-recent" id="recent-work" aria-labelledby="recent-work-title">
+  <div class="container">
+    <div class="home-recent-card">
+      <div class="home-recent-copy">
+        <p class="eyebrow">Recent work · <time datetime="2026-11-19">19 November 2026</time></p>
+        <h2 id="recent-work-title">Molloys<br>Christmas Wine Fair</h2>
+        <p>The people, the tastings and the festive atmosphere. A new event film for Molloys, bringing the night to life in 94 seconds.</p>
+        <div class="landing-actions">
+          <button class="btn btn-gold" type="button" data-video="youtube:d48F_8LCWWQ" data-film-aspect="portrait" data-film-title="Molloys Christmas Wine Fair 2026">Watch the film <span aria-hidden="true">▶</span></button>
+          <a class="btn btn-line" href="molloys-christmas-launch.html#wine-fair-2026">Explore Molloys <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+      <button class="home-recent-poster" type="button" data-video="youtube:d48F_8LCWWQ" data-film-aspect="portrait" data-film-title="Molloys Christmas Wine Fair 2026" aria-label="Play Molloys Christmas Wine Fair 2026">
+        <img src="video-covers/molloys-wine-fair-2026.webp" width="720" height="1280" alt="Guests raising their glasses at Molloys Christmas Wine Fair" loading="lazy">
+        <span aria-hidden="true">▶</span>
+      </button>
+    </div>
+  </div>
+</section>
+
 <section class="home-services" id="services" aria-labelledby="services-title">
   <div class="container">
     <h2 class="display" id="services-title">Services</h2>
@@ -199,6 +219,7 @@
 <article class="film-tile"><button class="film-art" data-video="youtube:MOGLZ8o4qmI" data-film-title="Al Foran — Arrival coverage" aria-label="Play Al Foran — Arrival coverage"><img src="video-covers/MOGLZ8o4qmI.jpg" alt="" width="640" height="360" loading="lazy"><span class="film-play" aria-hidden="true">▶</span><span class="film-watch">Watch film</span></button><div class="film-tile-copy"><h4>Al Foran</h4><p>Arrival coverage</p><a href="boxing.html" aria-label="Project details for Al Foran">Project details <span aria-hidden="true">↗</span></a></div></article>
 </div></section>
 <section class="film-shelf" id="films-brands" aria-labelledby="title-brands"><div class="shelf-heading"><h3 id="title-brands">Brands, venues &amp; events</h3><div><a href="projects.html">View collection ↗</a><button class="shelf-arrow" data-shelf="brands" data-direction="-1" aria-label="Previous films in Brands, venues &amp; events" aria-controls="track-brands" hidden>‹</button><button class="shelf-arrow" data-shelf="brands" data-direction="1" aria-label="Next films in Brands, venues &amp; events" aria-controls="track-brands" hidden>›</button></div></div><div class="film-track" id="track-brands">
+<article class="film-tile"><button class="film-art" data-video="youtube:d48F_8LCWWQ" data-film-aspect="portrait" data-film-title="Molloys Christmas Wine Fair 2026" aria-label="Play Molloys Christmas Wine Fair 2026"><img src="video-covers/molloys-wine-fair-2026.webp" alt="" width="720" height="1280" loading="lazy"><span class="film-play" aria-hidden="true">▶</span><span class="film-watch">Watch film</span></button><div class="film-tile-copy"><h4>Molloys Christmas Wine Fair</h4><p>19 November 2026 · Event highlights</p><a href="molloys-christmas-launch.html#wine-fair-2026">Project details <span aria-hidden="true">↗</span></a></div></article>
 <article class="film-tile"><button class="film-art" data-video="youtube:N4kfutK9i1Y" data-film-title="ALP — Press conference" aria-label="Play ALP — Press conference"><img src="video-covers/N4kfutK9i1Y.jpg" alt="" width="640" height="360" loading="lazy"><span class="film-play" aria-hidden="true">▶</span><span class="film-watch">Watch film</span></button><div class="film-tile-copy"><h4>ALP</h4><p>Press conference</p><a href="alp.html" aria-label="Project details for ALP">Project details <span aria-hidden="true">↗</span></a></div></article>
 <article class="film-tile"><button class="film-art" data-video="youtube:PTA6mzwXL30" data-film-title="Cooper International — Horse transport · Tattersalls" aria-label="Play Cooper International — Horse transport · Tattersalls"><img src="https://i.ytimg.com/vi/PTA6mzwXL30/hqdefault.jpg" alt="" width="640" height="360" loading="lazy"><span class="film-play" aria-hidden="true">▶</span><span class="film-watch">Watch film</span></button><div class="film-tile-copy"><h4>Cooper International</h4><p>Horse transport · Tattersalls</p><a href="cooper-international-horse-transport.html" aria-label="Project details for Cooper International">Project details <span aria-hidden="true">↗</span></a></div></article>
 <article class="film-tile"><button class="film-art" data-video="youtube:h7yAHs9KL9s" data-film-title="Mr Price — Dundalk store opening" aria-label="Play Mr Price — Dundalk store opening"><img src="https://i.ytimg.com/vi/h7yAHs9KL9s/hqdefault.jpg" alt="" width="640" height="360" loading="lazy"><span class="film-play" aria-hidden="true">▶</span><span class="film-watch">Watch film</span></button><div class="film-tile-copy"><h4>Mr Price</h4><p>Dundalk store opening</p><a href="mr-price-dundalk-store-opening.html" aria-label="Project details for Mr Price">Project details <span aria-hidden="true">↗</span></a></div></article>
@@ -360,7 +381,10 @@ function videoHTML(spec){
   return '<video controls autoplay playsinline src="'+id+'" style="width:100%;height:100%;object-fit:contain;background:#000"></video>';
 }
 document.querySelectorAll('[data-video]').forEach(b=>b.addEventListener('click',e=>{
-  e.preventDefault();modal.setAttribute("aria-label",b.dataset.filmTitle||b.getAttribute("aria-label")||"Film player");openModal(videoHTML(b.dataset.video));
+  e.preventDefault();
+  modal.classList.toggle('portrait', b.dataset.filmAspect === 'portrait');
+  modal.setAttribute("aria-label",b.dataset.filmTitle||b.getAttribute("aria-label")||"Film player");
+  openModal(videoHTML(b.dataset.video));
 }));
 function closeReel(){
   modal.classList.remove('open');document.body.style.overflow='';
